@@ -107,35 +107,20 @@ body {
 }
 
 /* Hero Section */
-.hero{
-    /* 1️⃣  background image you already set */
-    background-image:url("images/cikm_background.png");
-    background-repeat:no-repeat;
-    background-position:center top;
-
-    /* 2️⃣  show the whole picture, no tiling  */
-    background-size:cover;   /* keeps entire image visible */
-
-    /* 3️⃣  let the image dictate the block height  */
-    height:416px;
-    max-height:768px;          /* prevents accidental upsizing  */
-
-    /* 4️⃣  remove any “full-screen” rule */
-    height:auto;               /* override old height/min-height */
-    padding:0;                 /* trim extra vertical space      */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #718096 0%, #4a5568 100%);
+    color: white;
+    position: relative;
 }
 
-/* optional overlay for readability – keep if you like */
-.hero::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,.35); /* tweak opacity or delete */
-    z-index:0;
-}
-.hero-container{              /* keep text above overlay */
-    position:relative;
-    z-index:1;
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
 }
 
 .hero-title {
