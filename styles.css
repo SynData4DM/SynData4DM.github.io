@@ -111,7 +111,8 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #718096 0%, #4a5568 100%);
+    /* background: linear-gradient(135deg, #718096 0%, #4a5568 100%); */
+    background-image: url("images/cikm_background.png");
     color: white;
     position: relative;
 }
